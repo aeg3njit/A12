@@ -12,19 +12,11 @@ html {
 }
 
 body {
-/* by setting the width to 600 pixels, setting 
-the top and bottom margins to 0 and the right and left margins to auto, and 
-adding a 3-pixel, solid border with #931420 as its color. Then, test this change 
-in Chrome. If the page isn’t centered with a border, make the required  
-corrections */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 600px;
+    width: 800px;
     margin: 0 auto;
     border: 3px solid #931420;
-/* add one more rule to the body that sets the background color to #fffded. 
-Then, test this change, and note that the entire window is set to the 
-background color, not just the body */
     background-color: #fffded;
 }
 
@@ -52,6 +44,20 @@ body */
 	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
 }
 
+section {
+	width: 525px;
+	float: right;
+	padding: 0 20px 20px 20px;
+	
+}
+
+aside {
+	width: 215px;
+	float: right;
+	padding: 0 0 20px 20px;
+	
+}
+
 
 header img {
 	float: left;
@@ -76,46 +82,35 @@ header h3 {
 /* the styles for the section */
 main {
 	clear: left;
-	padding: 0 30px;
+	
 }
 
-main h1 {
-/* add top and bottom borders to the h1 heading in the main element. Both 
-borders should be the same as the borders for the header and footer */
-	font-size: 150%;
-	border: 3px double #800000;
-	margin-bottom: .75em;
-	border-radius: 10px;
-	box-shadow: 5px 5px;
-	padding: .5em 0 .5em 2em;
-	background-color: white;
-}
 
-main h2 {
+aside h2 {
 	color: #800000;
 	font-size: 130%;
 	padding: .5em 0 .25em 0;
 }
-main h3 {
+aside h3 {
 	font-size: 105%;
 	padding-bottom: .25em;
 }
-main img {
+aside img {
 	padding-bottom: 1em;
 }
-main p {
+setion p {
 	padding-bottom: .5em;
 }
 
 /* italisize the blockquote element */
-main blockquote {
+section blockquote {
 	padding: 0 2em;
 	font-style: italic;
 }
-main ul {
+section ul {
 	padding: 0 0 .25em 1.25em;
 }
-main li {
+section li {
 	padding-bottom: .35em;
 }
 
@@ -132,4 +127,5 @@ footer p {
 }
 footer {
 	background-color: #931420;
+	clear: both;
 }
